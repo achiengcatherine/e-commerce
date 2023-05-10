@@ -1,13 +1,13 @@
-*{
+* {
   margin: 0;
   font-family: sans-serif;
   color: rgb(28, 28, 29);
-
 }
 .App {
+  margin: 0 auto;
   text-align: center;
 }
-.navbar{
+.navbar {
   padding: 20px;
   display: flex;
   align-items: center;
@@ -15,26 +15,56 @@
   margin: 0 auto;
   border-bottom: 1px solid wheat;
 }
-.navbar h2{
+.navbar h2 {
   color: orange;
 }
-.navbar .links{
+.navbar .links {
   margin-left: auto;
 }
 
-
-.navbar a{
+.navbar a {
   text-decoration: none;
   margin-left: 20px;
   padding: 6px;
-
 }
-.navbar a:hover{
+.navbar a:hover {
   color: orange;
   font-size: 20px;
 }
-.content{
+.img {
+  margin: 0 auto;
+  display: flex;
+  width: 70px;
+  height: 70px;
+  float: right;
+}
+
+.img .logo:hover {
+  width: 100px;
+  height: 100px;
+}
+
+.content {
   max-width: 700px;
   margin: 40px auto;
   padding: 20px;
+}
+@media (min-width: 400px) {
+  .App {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .content {
+    max-width: 400px;
+    margin: 30px auto;
+    padding: 16px;
+  }
+  .navbar {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    max-width: 500px;
+    margin: 0 auto;
+    border-bottom: 1px solid wheat;
+  }
 }

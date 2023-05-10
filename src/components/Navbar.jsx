@@ -1,6 +1,7 @@
 import React from 'react'
 
 const Navbar = () => {
+  
   return (
     <nav className="navbar">
       <h2>Sneakers</h2>
@@ -11,6 +12,7 @@ const Navbar = () => {
         <a href="/">About</a>
         <a href="/">Contacts</a>
       </div>
+      
     </nav>
   );
 }
