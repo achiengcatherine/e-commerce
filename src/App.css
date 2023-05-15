@@ -49,22 +49,53 @@
   margin: 40px auto;
   padding: 20px;
 }
-@media (min-width: 400px) {
-  .App {
-    margin: 0 auto;
-    text-align: center;
-  }
-  .content {
-    max-width: 400px;
-    margin: 30px auto;
-    padding: 16px;
-  }
-  .navbar {
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    max-width: 500px;
-    margin: 0 auto;
-    border-bottom: 1px solid wheat;
-  }
+.homepage{
+  display: flex;
+}
+.sneaker{
+  color: orange;
+}
+.price{
+  display: flex;
+  margin-left: 50px;
+  font-size: 20px;
+}
+.price .afterdisc{
+  font-size: 32px;
+}
+.price .disc{
+  color: orange;
+  padding: 10px;
+}
+.initialprice{
+  margin-right: 300px;
+  font-size: 20px;
+  
+}
+.count{
+  display: flex;
+  padding: 30px;
+  margin: 20px;
+}
+.count .decr{
+  color: orange;
+  font-size: larger;
+  font-weight: bolder;
+  border: wheat;
+  
+}
+.count .qty{
+  padding: 10px;
+}
+.count .inc{
+  color: orange;
+  font-size: larger;
+  font-weight: bolder;
+  border: wheat;
+}
+.count .btn{
+  background-color: orange;
+  margin-left: 10px;
+  border-radius: 10%;
+  border: orange;
 }
