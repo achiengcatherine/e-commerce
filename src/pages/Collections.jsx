@@ -1,19 +1,25 @@
-import React from "react"; 
-//import shoe1 from "./images/shoe1.jpg";
+import { useState , useEffect} from "react";
+import React from "react";
 
+import { ReactComponent as shoe1 } from './src/images/shoe1.jpg';
+//import cart from './img/to/cart.jpeg'
 
 const Collections = () => {
- const shoe1 = require(".images/shoe1.jpg")
- 
+  const [Counter, setCounter] = useState(0);
+  useEffect(() => {
+    //alert('You have changed the counter to '+Counter)
+  },[Counter]);
+  const shoe1 = require(".images/shoe1.jpg")
+
   return (
     <div className="homepage">
       <div className="collection">
-        <img src="{shoe1}" alt="" />
+        <img src="{require(shoe1)}" alt=""/>
       </div>
       <div className="details">
-        <h2 className="sneaker">sneaker company</h2>
+        <h2>sneaker company</h2>
         <h1>
-          Kate Limited Edition<br></br> Sneakers
+          Kate Limited Edition<br/> Sneakers
         </h1>
         <p>
           These low profile sneakers are your perfect casual wear companion.
@@ -29,12 +35,22 @@ const Collections = () => {
         </div>
         <h2 className="initialprice">$250.00</h2>
 
-        <div className="count">
-          <button className="decr">-</button>
-          <h3 className="qty">3</h3>
-          <button className="inc">+</button>
+        <div className="counter">
+          <button
+            className="decr"
+            onClick={() => setCounter((prevCount) => prevCount - 1)}
+          >
+            -
+          </button>
+          <h3 className="count">{Counter}</h3>
+          <button
+            className="inc"
+            onClick={() => setCounter((prevCount) => prevCount + 1)}
+          >
+            +
+          </button>
           <button className="btn">
-            <img src=".images/cart.jpeg" />
+            <img src="./img/cart.jpeg}" className="cart" alt="" />
             Add to cart
           </button>
         </div>

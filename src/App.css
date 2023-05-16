@@ -6,6 +6,7 @@
 .App {
   margin: 0 auto;
   text-align: center;
+  padding: 1rem;
 }
 .navbar {
   padding: 20px;
@@ -43,6 +44,30 @@
   width: 100px;
   height: 100px;
 }
+.search{
+position: relative;
+}
+.search .input{
+  margin: 20px;
+  padding: 10px;
+  padding-right: 120px;
+  border: 1px solid rgb(247, 236, 137);
+  border-radius: 17px;
+  background-color: rgb(250, 250, 244);
+  
+}
+.search .icon{
+  color: rgb(224, 173, 79);
+  position: absolute;
+  top: 27px;
+  right: 200px;
+  width: 28px;
+  height: 27px;
+  cursor: pointer;
+  
+  
+
+}
 
 .content {
   max-width: 700px;
@@ -52,8 +77,14 @@
 .homepage{
   display: flex;
 }
-.sneaker{
+.details h2{
   color: orange;
+  font-size: larger;
+  
+}
+.details h1{
+  font-weight: bold;
+  font-size: 20px;
 }
 .price{
   display: flex;
@@ -72,28 +103,28 @@
   font-size: 20px;
   
 }
-.count{
+.counter{
   display: flex;
   padding: 30px;
   margin: 20px;
 }
-.count .decr{
+.counter .decr{
   color: orange;
   font-size: larger;
   font-weight: bolder;
   border: wheat;
   
 }
-.count .qty{
+.counter .count{
   padding: 10px;
 }
-.count .inc{
+.counter .inc{
   color: orange;
   font-size: larger;
   font-weight: bolder;
   border: wheat;
 }
-.count .btn{
+.counter .btn{
   background-color: orange;
   margin-left: 10px;
   border-radius: 10%;
